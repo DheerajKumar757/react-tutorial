@@ -1,0 +1,23 @@
+
+
+To check version of node :
+node -v
+
+To check version of npm(node package manager) :
+npm -v 
+
+To update the node we need nvm which is node version manager.
+To update the node to the Long Term-Support version :
+nvm install --lts
+
+You can read below page to learn about the nvm :
+https://github.com/nvm-sh/nvm
+
+To create a vite project :
+npm create vite@latest
+enter project name
+select the framework as React
+select the variant as Javascript
+Go to project directory
+install npm using : install npm
+open server using : npm run dev
