@@ -11,5 +11,8 @@ import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"))
 root.render(
-    <h1>Hello, Dheeraj Here! Learning React!!</h1>
+    <>
+        <img src="/src/assets/react-logo.png"/>
+        <h1>Hello, Dheeraj Here! Learning React!!</h1>
+    </>
 )
