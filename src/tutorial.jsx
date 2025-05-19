@@ -12,10 +12,15 @@
  * 
  * Move the 'width' style off the JSX and into CSS with a dedicated
  * className on the img element, and change the width to 55px instead.
+ * 
+ * Create different jsx file for Header, Footer and MainContent.
  */
 
 import { createRoot } from "react-dom/client";
 import { Fragment } from "react";
+import Header from "./header";
+import Footer from "./footer.jsx";
+import MainContent from "./main_content.jsx";
 
 const root = createRoot(document.getElementById("root"))
 root.render(
@@ -23,45 +28,6 @@ root.render(
         <Page />
     </main>
 )
-
-function Header() {
-    return (
-        <header className="header">
-            <img src="/src/assets/react-logo.png" className="nav-logo" alt="React logo"/>
-            <nav>
-                <ul className="nav-list">
-                    <li className="nav-list-item">Pricing</li>
-                    <li className="nav-list-item">About</li>
-                    <li className="nav-list-item">Contact</li>
-                </ul>
-            </nav>
-            
-        </header>
-    )
-}
-
-function MainContent() {
-    return (
-        <>
-            <h1>Fun facts about React!</h1>
-            <ul>
-                <li>Was first release in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 200K stars on Github</li>
-                <li>Is maintained by Meta</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
-        </>
-    )
-}
-
-function Footer() {
-    return (
-        <footer>
-            <small>@ 2024 kumar development. All rights reserved. </small>
-        </footer>
-    )
-}
 
 function Page() {
     return (
