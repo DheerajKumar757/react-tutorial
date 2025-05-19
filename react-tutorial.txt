@@ -1,4 +1,10 @@
 
+Course Details :
+Title : Learn React JS - Full Beginner’s Tutorial & Practice Projects
+Tutor : Bob Ziroll
+Link : https://www.youtube.com/watch?v=x4rFhThSX04
+Github : https://github.com/scrimba/learn-react
+
 
 To check version of node :
 node -v
