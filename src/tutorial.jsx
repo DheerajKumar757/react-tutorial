@@ -10,6 +10,8 @@
  * NOTE: for practice's sake, don't select any
  * elements, but use classes for all styling.
  * 
+ * Move the 'width' style off the JSX and into CSS with a dedicated
+ * className on the img element, and change the width to 55px instead.
  */
 
 import { createRoot } from "react-dom/client";
@@ -25,7 +27,7 @@ root.render(
 function Header() {
     return (
         <header className="header">
-            <img src="/src/assets/react-logo.png" width="40px" alt="React logo"/>
+            <img src="/src/assets/react-logo.png" className="nav-logo" alt="React logo"/>
             <nav>
                 <ul className="nav-list">
                     <li className="nav-list-item">Pricing</li>
